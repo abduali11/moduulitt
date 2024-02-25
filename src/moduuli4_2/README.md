@@ -24,17 +24,19 @@ class Calculator {
         System.out.println("Current value: " + calc.getSum());
     }
 
-// The sum of the numbers added to the calculator.
+The sum of the numbers added to the calculator.
+
     private int sum = 0;
 
 
-// Set the sum to zero.
+Set the sum to zero.
+
     public void reset() {
         sum = 0;
     }
 
 
-//Add a number to the sum. Only positive numbers are allowed.
+Add a number to the sum. Only positive numbers are allowed.
 
     public void add(int number) {
         sum = sum + number;
@@ -42,7 +44,7 @@ class Calculator {
             throw new IllegalArgumentException("Only positive numbers are allowed");
         }
     }
-// Return the current sum.
+Return the current sum.
 
     public int getSum() {
         return sum;
